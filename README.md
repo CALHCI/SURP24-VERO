@@ -11,14 +11,14 @@
 
 ## Stage 1
 #### Deadline: (12/6/24)
-- [ ] Convert VR information to usable format. (x, y) works for now. *Seperate repo*
+- [ ] Convert VR information to usable format. (x, y) works for now. *Seperate repo*.
 - [ ] Recieve raw data websocket stream.
 - [ ] Clean stream.
 - [ ] Convert VR stream into robot information stream.
 - [ ] Handle interpolation between packets to prevent backlog of actions.
 - [ ] Send stream via websocket to robot.
 - [ ] Handle robot commands. *Seperate repo*
-- [ ] Make a writeup for grants
+- [ ] Make a writeup for grants.
 
 ## Stage 2
 #### Talk with Javier of course but premptively...
