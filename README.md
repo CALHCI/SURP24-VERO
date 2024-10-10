@@ -7,7 +7,7 @@
    git clone https://github.com/CALHCI/VR-UR.git
    cd VR-UR
    # There's a way to use git flow built in?
-``
+```
 
 ## Stage 1
 #### Deadline: (12/6/24)
