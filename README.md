@@ -11,15 +11,18 @@
 
 ## Stage 1
 #### Deadline: (12/6/24)
-- [ ] Convert VR information to usable format. (x, y) works for now. *Seperate repo*.
-- [ ] Recieve raw data websocket stream.
+- [ ] Convert VR information to usable format. (x, y) - **create a folder/package or link it here**
+- [ ] Recieve raw data websocket stream. - **a simple socket or MQTT could work**
 - [ ] Clean stream.
 - [ ] Convert VR stream into robot information stream.
 - [ ] Handle interpolation between packets to prevent backlog of actions.
 - [ ] Send stream via websocket to robot.
-- [ ] Handle robot commands. *Seperate repo*
-- [ ] Make a writeup for grants.
+- [ ] Handle robot commands. - **create a folder/package or link it here**
+- [ ] Paper and Video for the HRI conference.
 
 ## Stage 2
+- [ ] talk to you later
+
+## Stage 3
 #### Talk with Javier of course but premptively...
-- [ ] Monolithic to modular via a microservice structure communicating using a message broker (Springboot and RabbitMQ)
+- [ ] Monolithic to modular via a microservice structure communicating using a message broker (Springboot and RabbitMQ) - **check Mosqutto MQTT**
