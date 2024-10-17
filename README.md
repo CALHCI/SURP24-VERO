@@ -14,8 +14,8 @@
 - [ ] Convert VR information to usable format. (x, y) - **create a folder/package or link it here**
 - [ ] Recieve raw data websocket stream. - **a simple socket or MQTT could work**
 - [ ] Clean stream.
-- [ ] Convert VR stream into robot information stream.
-- [ ] Handle interpolation between packets to prevent backlog of actions.
+- [ ] Use threading, buffering, and interpolation to prevent backlog of actions (if delay or stutter is present).
+- [X] Convert VR stream into robot information stream.
 - [ ] Send stream via websocket to robot.
 - [ ] Handle robot commands. - **create a folder/package or link it here**
 - [ ] Paper and Video for the HRI conference.
