@@ -5,10 +5,11 @@
 > [!NOTE]  
 > Removing the instructions about how to clone a Github repository assuming you all are knowledgeable on that.
 
+<br>
 
 ## Modules
 
-This are the modules in this repository as today.1
+These are the modules in this repository as today.
 
 ### Dashboard
 
@@ -21,6 +22,7 @@ The dashboard module is an application with two elements
 > [!NOTE]  
 > Tell me what this is.
 
+<br>
 
 ## To Do List
 
