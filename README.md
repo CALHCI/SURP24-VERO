@@ -3,7 +3,7 @@
 **Virtual Environment for Robot Operation (VERO)** is an application that processes user input from a **Meta Quest 3 headset** and converts it into commands for controlling a **UR cobot**.
 
 > [!NOTE]  
-> Removing the instructions to clone a github repository assuming you are knowledgeable on that.
+> Removing the instructions about how to clone a Github repository assuming you all are knowledgeable on that.
 
 
 ## Modules
