@@ -29,17 +29,17 @@ The dashboard module is an application with two elements
 > [!NOTE]  
 > Add who is responsible below.
 
-- [ ] Modify the class Subscriber.java to receive the VR data stream (the method run). - **Who?**
-- [ ] Modify the class Blackboard.java to do the math processing needed per value received (create a new method and call it in add before adding point to the data structure points. - **Who?**
-- [ ] Create instructions for the robot (it is OK to just print them on console or use the logger. - **Who?**
-- [ ] Try the instructions feeding them manually to the UR cobot. - **Who?**
+1. [ ] Modify the class Subscriber.java to receive the VR data stream (the method run). - **Who?**
+2.[ ] Modify the class Blackboard.java to do the math processing needed per value received (create a new method and call it in add before adding point to the data structure points. - **Who?**
+3.[ ] Create instructions for the robot (it is OK to just print them on console or use the logger. - **Who?**
+4.[ ] Try the instructions feeding them manually to the UR cobot. - **Who?**
 
 ## Stage 1
 
-- [ ] Send stream via websocket to robot.
-- [ ] Send commands to the robot.
+1.[ ] Send stream via websocket to robot.
+2.[ ] Send commands to the robot.
 
 
 ## Stage 2
 
-- [ ] Paper and Video for the HRI conference.
+1.[ ] Paper and Video for the HRI conference.
