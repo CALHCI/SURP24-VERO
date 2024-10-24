@@ -1,28 +1,43 @@
-# VR-UR
+# VERO
 
-VR-UR is an application that processes user input from a **Meta Quest 3 headset** and converts it into commands for controlling a **UR cobot**.
+Virtual Environment for Robot Operation (VERO) is an application that processes user input from a **Meta Quest 3 headset** and converts it into commands for controlling a **UR cobot**.
 
 > [!NOTE]  
 > Removing the instructions to clone a github repository assuming you are knowledgeable on that.
 
 
-## Stage 1
+## Modules
+
+This are the modules in this repository as today.1
+
+### Dashboard
+
+The dashboard module is an application with two elements
+- Headset simulator is a server streaming random x and y coordinates to the dashboard.
+- Dashboard is a Java Desktop application that displays the x and y coordinates in real-time on screen.
+
+### WebSockets
 
 > [!NOTE]  
-> Add responsible below.
+> Tell me what this is.
 
-- [ ] Convert VR information to usable format. (x, y) - **create a folder/package or link it here**
-- [ ] Recieve raw data websocket stream. - **a simple socket or MQTT could work**
-- [ ] Clean stream.
-- [ ] Use threading, buffering, and interpolation to prevent backlog of actions (if delay or stutter is present).
-- [X] Convert VR stream into robot information stream.
+
+## To Do List
+
+> [!NOTE]  
+> Add who is responsible below.
+
+- [ ] Modify the class Subscriber.java to receive the VR data stream (the method run). - **Who?**
+- [ ] Modify the class Blackboard.java to do the math processing needed per value received (create a new method and call it in add before adding point to the data structure points. - **Who?**
+- [ ] Create instructions for the robot (it is OK to just print them on console or use the logger. - **Who?**
+- [ ] Try the instructions feeding them manually to the UR cobot. - **Who?**
+
+## Stage 1
+
 - [ ] Send stream via websocket to robot.
-- [ ] Handle robot commands. - **create a folder/package or link it here**
-- [ ] Paper and Video for the HRI conference.
+- [ ] Send commands to the robot.
+
 
 ## Stage 2
-- [ ] talk to you later
 
-## Stage 3
-#### Talk with Javier of course but premptively...
-- [ ] Monolithic to modular via a microservice structure communicating using a message broker (Springboot and RabbitMQ) - **check Mosqutto MQTT**
+- [ ] Paper and Video for the HRI conference.
