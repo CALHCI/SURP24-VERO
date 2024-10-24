@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
 
 /**
  * Controller class that listens for button clicks and calls the appropriate methods in the Client class.
