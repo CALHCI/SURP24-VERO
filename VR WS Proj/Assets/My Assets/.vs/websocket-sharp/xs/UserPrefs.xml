@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{A2096A32-C526-4455-8430-F9F3D1F9CC4F}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.websocket-sharp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
