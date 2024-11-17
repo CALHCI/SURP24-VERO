@@ -1,6 +1,6 @@
 package controlPanel;
 
-import java.awt.geom.Point2D;
+import java.awt.*;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class Blackboard extends PropertyChangeSupport {
 	
 	private static Blackboard instance;
 	
-	private List<Point2D> points;
+	private List<Point> points;
 	
 	private Blackboard() {
 		super(new Object());
@@ -29,17 +29,12 @@ public class Blackboard extends PropertyChangeSupport {
 		return instance;
 	}
 	
-	public void add(Point2D p) {
+	public void add(Point p) {
 		points.add(p);
 		firePropertyChange("points", null, points);
 	}
-
-	public void clear() {
-		points.clear();
-		firePropertyChange("points", null, points);
-	}
-
-	public Iterable<? extends Point2D> getPoints() {
+	
+	public Iterable<? extends Point> getPoints() {
 		return points;
 	}
 	
