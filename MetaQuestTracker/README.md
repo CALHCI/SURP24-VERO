@@ -1,4 +1,7 @@
 1. Install the APK in the Meta Quest
 2. Run the Java Project (MetaHorizon) - dependencies handled with Maven
 
-![screenshot](https://github.com/user-attachments/assets/81b41b22-d5e7-4334-9199-1a5bfa1342ad)
+
+<center>
+<img width="540" alt="Screenshot 2024-11-17 at 9 59 15 PM" src="https://github.com/user-attachments/assets/e45ba597-76d0-4198-b1ca-f47e19b9dd78">
+</center>
