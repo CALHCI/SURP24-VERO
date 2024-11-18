@@ -1,3 +1,5 @@
+# Test as Follows
+
 1. Install the APK in the Meta Quest
 2. Run the Java Project (MetaHorizon) - dependencies handled with Maven
 
