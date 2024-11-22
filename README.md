@@ -7,22 +7,12 @@
 
 <br>
 
-## Modules
-
-These are the modules in this repository as today.
-
 ### Dashboard
 
 The dashboard module is an application with two elements
 - Headset simulator is a server streaming random x and y coordinates to the dashboard.
 - Dashboard is a Java Desktop application that displays the x and y coordinates in real-time on screen.
 
-### WebSockets
-
-> [!NOTE]  
-> Tell me what this is.
-
-<br>
 
 ## To Do List
 
