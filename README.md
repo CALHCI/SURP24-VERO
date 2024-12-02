@@ -4,7 +4,6 @@
 
 <br>
 
-## Modules
 ### Dashboard
 
 The dashboard module is an application with two elements
@@ -15,6 +14,7 @@ The dashboard module is an application with two elements
 
 ### VR WS Project
 - A unity script which uses XR to display a canvas which sends the translated coordinate out via websockets (WIP)
+
 
 ## To Do List
 
