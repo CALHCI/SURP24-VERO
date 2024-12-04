@@ -14,6 +14,6 @@ class Pose {
 
     @Override
     public String toString() {
-        return String.format("movel(%.4f, %.4f, %.4f, %.4f, %.4f, %.4f, a=1.0, v=0.25)", x, y, z, rx, ry, rz);
+        return String.format("p[%.4f, %.4f, %.4f, %.4f, %.4f, %.4f]", x, y, z, rx, ry, rz);
     }
 }

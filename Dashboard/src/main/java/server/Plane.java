@@ -1,5 +1,7 @@
 package server;
 
+import static java.lang.Math.*;
+
 class Plane {
     private final Pose origin, pX, pY;
 

@@ -30,15 +30,15 @@ public class Main {
 		timer.scheduleAtFixedRate(new TimerTask() {
 			@Override
 			public void run() {
-				theta += Math.PI / 60;
+				theta += Math.PI / 30;
 				double x = (Math.cos(theta) * 50 + 50);
 				double y = (Math.sin(theta) * 50 + 50);
 				mqttPublisher.publish(TOPIC, x + "," + y);
 			}
-		}, 0, 1000 / 60);
+		}, 0, 1000 / 4);
 
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(15000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt(); // Restore interrupted status
 			logger.error("Main thread was interrupted", e);

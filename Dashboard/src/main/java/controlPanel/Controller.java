@@ -20,9 +20,13 @@ public class Controller implements ActionListener {
 	private static final Logger logger = LoggerFactory.getLogger(Controller.class);
 	private Subscriber subscriber;
 
-	private double[] originValues = {-201.74, -495.33, -250.59, 0, 2.191, -2.217};
-	private double[] deltaXValues = {148.54, -495.33, -250.59, 0, 2.191, -2.217};
-	private double[] deltaYValues = {-201.74, -495.33, 8.28, 0, 2.191, -2.217};
+//	private double[] originValues = {-0.18075, -0.17714, 0.59784, -0.74074, -1.74977, 1.74};
+//	private double[] deltaXValues = {-0.43281, -0.05334, 0.59784, -0.74074, -1.74977, 1.74};
+//	private double[] deltaYValues = {-0.18075, -0.17714, 0.84278, -0.74074, -1.74977, 1.74};
+
+	private double[] originValues = {-0.32516, 0.39702, 0.28782, 1.35707, -1.0108, -1.06756};
+	private double[] deltaXValues = {-0.52433, -0.23842, 0.2957, 1.33333, -0.9504, -1.14978};
+	private double[] deltaYValues = {-0.32977, 0.42191, 0.85344, 1.15136, -1.12194, -0.71011};
 
 	private final Main mainFrame;
 
@@ -48,7 +52,7 @@ public class Controller implements ActionListener {
 			JOptionPane.showMessageDialog(null, "Already connected to broker", "Error", JOptionPane.ERROR_MESSAGE);
 		} else {
 			logger.info("Starting subscriber");
-			subscriber = new Subscriber("tcp://localhost:1883", "vr", originValues, deltaXValues, deltaYValues);
+			subscriber = new  Subscriber("tcp://localhost:1883", "vr", originValues, deltaXValues, deltaYValues);
 			Thread subscriberThread = new Thread(subscriber);
 			subscriberThread.start();
 			logger.info(String.format("Using poses: \n\t{%s}\n\t{%s}\n\t{%s}",

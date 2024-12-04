@@ -2,7 +2,7 @@ package controlPanel;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import server.SocketServer;
+import server.MQTTServer;
 
 /**
  * Client class to connect to the Meta Quest 3 and receive data.
@@ -14,10 +14,10 @@ public class Subscriber implements Runnable {
 	
 	private static final Logger logger = LoggerFactory.getLogger(Subscriber.class);
 	private boolean running = false;
-	private SocketServer server;
+	private MQTTServer server;
 	
 	public Subscriber(String broker, String topic, double[] originValues, double[] deltaXValues, double[] deltaYValues) {
-		this.server = new SocketServer(broker, topic, originValues, deltaXValues, deltaYValues);
+		this.server = new MQTTServer(broker, topic, originValues, deltaXValues, deltaYValues);
 	}
 	
 	@Override

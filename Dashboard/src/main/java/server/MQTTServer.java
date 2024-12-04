@@ -6,14 +6,12 @@ package server;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
-import java.net.InetSocketAddress;
-
-public class SocketServer {
+public class MQTTServer {
     private final MessageHandler messageHandler;
     private MqttClient client;
     private String topic;
 
-    public SocketServer(String broker, String topic, double[] originValues, double[] deltaXValues, double[] deltaYValues) {
+    public MQTTServer(String broker, String topic, double[] originValues, double[] deltaXValues, double[] deltaYValues) {
         try {
             client = new MqttClient(broker, MqttClient.generateClientId());
         } catch (MqttException e) {
