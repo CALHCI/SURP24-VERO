@@ -20,7 +20,7 @@ public class Main extends JFrame {
 		setSize(squareSize, squareSize);
 		setLocationRelativeTo(null);
 		// controller
-		Controller controller = new Controller();
+		Controller controller = new Controller(this);
 		// menu bar
 		setJMenuBar(createMenuBar(controller));
 		// work area
@@ -30,22 +30,32 @@ public class Main extends JFrame {
 	}
 	
 	private JMenuBar createMenuBar(Controller controller) {
-		JMenu fileMenu = new JMenu("Options");
+		// Server dropdown
+		JMenu fileMenu = new JMenu("Server");
 		// item - start
-		JMenuItem connectItem = new JMenuItem("Start client");
+		JMenuItem connectItem = new JMenuItem("Start server");
 		connectItem.addActionListener(controller);
 		fileMenu.add(connectItem);
 		// item - stop
-		JMenuItem pauseItem = new JMenuItem("Stop client");
+		JMenuItem pauseItem = new JMenuItem("Stop server");
 		pauseItem.addActionListener(controller);
 		fileMenu.add(pauseItem);
 		// item - exit
 		JMenuItem exitItem = new JMenuItem("Exit");
 		exitItem.addActionListener(controller);
 		fileMenu.add(exitItem);
+
+		// Settings dropdown
+		JMenu settingsMenu = new JMenu("Settings");
+		// Configure menu
+		JMenuItem settingsItem = new JMenuItem("Configure");
+		settingsItem.addActionListener(controller);
+		settingsMenu.add(settingsItem);
+
 		// menu bar
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.add(fileMenu);
+		menuBar.add(settingsMenu);
 		return menuBar;
 	}
 	
