@@ -12,8 +12,8 @@ The dashboard module is an application with two elements
 - Server is the websocket server which recieves x and y coordinates from the VR headset and translates them into 3d space for the cobot arm.
 
 
-### VR WS Project
-- A unity script which uses XR to display a canvas which sends the translated coordinate out via websockets (WIP)
+### VR MQTT Project
+- A unity project which tracks user hands and streams them to an MQTT broker which can be accessed by the Java Control Panel app
 
 
 ## To Do List
@@ -41,5 +41,9 @@ The dashboard module is an application with two elements
 5. Run `headsetSimulator/Main.java` to run the simulation
 
 
-> [!IMPORTANT]  
-> Add Unity project install guide here when ready.
+## Unity Project Setup
+1. Install Unity Hub and Unity
+2. Clone this repository to Finder/File Explorer
+3. Open Unity Hub, in Projects tab click Add > Add project from disk
+4. Select the "Unity MQTT Proj" folder from this repository
+5. Open scene called "MQTT3dTestProj" in Assets folder
