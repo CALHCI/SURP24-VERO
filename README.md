@@ -9,11 +9,13 @@
 The dashboard module is an application with two elements
 - ControlPanel is a Java Desktop application that starts the server, displays the x and y coordinates in real-time on screen, allows the user to alter the starting positions.
 - HeadsetSimulator is a server streaming sample x and y coordinates to the dashboard (draws 3/4ths of a circle).
-- Server is the websocket server which recieves x and y coordinates from the VR headset and translates them into 3d space for the cobot arm.
+- Server is the MQTT server which recieves x and y coordinates from the VR headset and translates them into 3d space for the cobot arm.
 
 
 ### VR MQTT Project
-- A unity project which tracks user hands and streams them to an MQTT broker which can be accessed by the Java Control Panel app
+- Unity-based VR app that tracks precise hand ray hit points on a virtual canvas and the real-time position of a cube
+- Data is streamed to an MQTT broker, allowing collaboration with Java app for visualization and translation to robot commands
+  
 
 
 ## To Do List
