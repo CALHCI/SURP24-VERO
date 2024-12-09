@@ -48,5 +48,5 @@ The dashboard module is an application with two elements
 2. From within Unity Hub, make sure you have Unity version 2022.3.42f1 installed
 3. Clone this repository to Finder/File Explorer
 4. Open Unity Hub, in Projects tab click Add > Add project from disk
-5. Select the "Unity MQTT Proj" folder from this repository
+5. Select the "VR MQTT Proj" folder from this repository
 6. Open scene called "MQTT3dTestProj" in Assets folder
