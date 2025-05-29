@@ -52,7 +52,7 @@ public class Controller implements ActionListener {
 			JOptionPane.showMessageDialog(null, "Already connected to broker", "Error", JOptionPane.ERROR_MESSAGE);
 		} else {
 			logger.info("Starting subscriber");
-			subscriber = new  Subscriber("tcp://localhost:1883", "vr", originValues, deltaXValues, deltaYValues);
+			subscriber = new  Subscriber("tcp://test.mosquitto.org:1883", "jgs/unity/test", originValues, deltaXValues, deltaYValues);
 			Thread subscriberThread = new Thread(subscriber);
 			subscriberThread.start();
 			logger.info(String.format("Using poses: \n\t{%s}\n\t{%s}\n\t{%s}",
